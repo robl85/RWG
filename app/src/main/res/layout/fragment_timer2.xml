@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/buttonTwenty"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_pressed"
+            style="?android:attr/buttonBarButtonStyle"
+            android:elevation="4dp"
+            android:padding="10dp"
+            android:text="20 / 40" />
+
+        <Button
+            android:id="@+id/buttonThirty"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_pressed"
+            android:padding="10dp"
+            android:text="30 / 30" />
+
+        <Button
+            android:id="@+id/buttonFortyFive"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_pressed"
+            android:padding="10dp"
+            android:text="45 / 15" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:padding="15dp"
+        android:textSize="60sp"
+        android:text="Ready?" />
+
+    <TextView
+        android:id="@+id/restWorkTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:padding="15dp"
+        android:textSize="40sp" />
+
+    <Button
+        android:id="@+id/startStopButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_gravity="center_horizontal"
+        android:padding="15dp"
+        android:textSize="20sp"
+        android:text="Start/Stop" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_gravity="center_horizontal"
+        android:padding="15dp"
+        android:textSize="20sp"
+        android:text="Reset timer" />
+
+</LinearLayout>
