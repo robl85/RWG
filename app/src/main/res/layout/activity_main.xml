@@ -1,12 +1,25 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/timerFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout="@layout/fragment_timer2"
+        android:name="com.example.rwgv12.TimerFragment" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <androidx.fragment.app.FragmentContainerView
-            android:id="@+id/timerFragment"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            tools:layout="@layout/fragment_timer2" />
-    </FrameLayout>
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/listFragment"
+        android:layout_width="match_parent"
+        android:layout_height="340dp"
+        tools:layout="@layout/fragment_list" />
+
+</FrameLayout>
+</LinearLayout>
