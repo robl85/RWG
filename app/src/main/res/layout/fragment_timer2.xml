@@ -18,6 +18,7 @@
             style="?android:attr/buttonBarButtonStyle"
             android:elevation="4dp"
             android:padding="10dp"
+            android:textSize="20sp"
             android:text="20 / 40" />
 
         <Button
@@ -27,6 +28,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/button_pressed"
             android:padding="10dp"
+            android:textSize="20sp"
             android:text="30 / 30" />
 
         <Button
@@ -36,6 +38,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/button_pressed"
             android:padding="10dp"
+            android:textSize="20sp"
             android:text="45 / 15" />
 
     </LinearLayout>
@@ -47,26 +50,36 @@
         android:layout_gravity="center_horizontal"
         android:layout_margin="10dp"
         android:layout_marginBottom="0dp"
-        android:text="Ready?"
-        android:textSize="60sp" />
+        android:text="Ready"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#143F76"
+        android:textColorHighlight="#AEC1BF"
+        android:textSize="80sp"
+        android:textStyle="bold"
+        android:typeface="monospace" />
 
     <TextView
         android:id="@+id/restWorkTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_margin="10dp"
+        android:layout_margin="5dp"
         android:textSize="40sp" />
 
     <Button
         android:id="@+id/startStopButton"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
         android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:background="@drawable/gradient_button_background"
+        android:elevation="4dp"
+        android:hapticFeedbackEnabled="true"
         android:padding="15dp"
-        android:textSize="20sp"
-        android:text="Start/Stop" />
+        android:text="Start/Stop"
+        android:textColor="#143F76"
+        android:textSize="20sp" />
+
 
     <Button
         android:id="@+id/resetButton"
@@ -75,7 +88,10 @@
         android:layout_margin="10dp"
         android:layout_gravity="center_horizontal"
         android:padding="15dp"
+        android:elevation="4dp"
         android:textSize="20sp"
+        android:textColor="#143F76"
+        android:background="@drawable/gradient_button_background"
         android:text="Reset timer" />
 
 </LinearLayout>

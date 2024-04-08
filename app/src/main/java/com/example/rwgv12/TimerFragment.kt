@@ -122,9 +122,9 @@ class TimerFragment : Fragment() {
 
         // Determine the work/rest status based on the selected duration
         val restWorkText = if (count < selectedDuration) {
-            "Work"
+            "Work!"
         } else {
-            "Rest"
+            "Rest..."
         }
         restWorkTextView.text = restWorkText
     }

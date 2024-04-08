@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView
 
 class ListFragment : Fragment() {
     private val exerciseList = mutableListOf(
-        "Push-ups", "Sit-ups", "Jumping Jacks", "Squats", "Plank", "Burpees", "Squats",
+        "Push-ups", "Crunches", "Squats", "Plank", "Burpees", "Squats",
         "Lunges", "Reverse lunges", "Sidestep lunges", "Squat shuffle", "Jumping lunges",
         "Squat jumps", "Push ups", "Narrow push ups", "Dips", "Crunches",
         "Crunches legs up touch behind legs", "Bicycle crunches", "High plank", "Side plank",
