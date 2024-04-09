@@ -25,7 +25,6 @@ class TimerFragment : Fragment() {
     private lateinit var restWorkTextView: TextView
     private var selectedDuration = 0
     private lateinit var selectDurationTextView: TextView
-    private lateinit var readyTextView: TextView
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -42,7 +41,6 @@ class TimerFragment : Fragment() {
         selectedDuration = 0
         isDurationSelected = false
         selectDurationTextView = view.findViewById(R.id.selectDurationTextView)
-        readyTextView = view.findViewById(R.id.readyTextView)
 
         // Set click listeners for the duration buttons
         view.findViewById<Button>(R.id.buttonTwenty).setOnClickListener {
@@ -113,7 +111,6 @@ class TimerFragment : Fragment() {
         if (!isRunning) {
             isRunning = true
             selectDurationTextView.visibility = View.GONE
-            readyTextView.visibility = View.GONE
             timerTextView.textSize = 40f
             timerTextView.visibility = View.VISIBLE
             restWorkTextView.visibility = View.VISIBLE
@@ -127,15 +124,13 @@ class TimerFragment : Fragment() {
                         count = 0
                         reps++
                     }
-                    updateReadyTextView()
+                    updatetimerTextView()
                 }
             }
         }
     }
 
-    private fun updateReadyTextView() {
-        readyTextView.text = "Ready"
-        readyTextView.textSize = 40f
+    private fun updatetimerTextView() {
         timerTextView.text = "Time: $count | Reps: $reps"
     }
 
@@ -148,9 +143,6 @@ class TimerFragment : Fragment() {
         stopTimer()
         count = 0
         reps = 0
-        readyTextView.visibility = View.GONE
-        readyTextView.text = "Ready"
-        readyTextView.textSize = 40f
         timerTextView.text = "Time: 0 | Reps: 0"
         timerTextView.visibility = View.GONE
         restWorkTextView.text = ""
