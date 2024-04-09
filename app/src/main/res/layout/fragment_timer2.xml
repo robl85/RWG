@@ -56,7 +56,24 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/selectDurationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="0dp"
+        android:text="Select work / rest duration..."
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#143F76"
+        android:textColorHighlight="#AEC1BF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:visibility="visible"
+        android:typeface="monospace" />
+
+    <TextView
+        android:id="@+id/readyTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
@@ -68,6 +85,7 @@
         android:textColorHighlight="#AEC1BF"
         android:textSize="80sp"
         android:textStyle="bold"
+        android:visibility="gone"
         android:typeface="monospace" />
 
     <TextView
