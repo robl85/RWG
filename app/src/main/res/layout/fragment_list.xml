@@ -8,9 +8,9 @@
         android:id="@+id/refreshButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Refresh List"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="16dp"/>
+        android:layout_marginTop="16dp"
+        android:text="Refresh List" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/exerciseRecyclerView"
@@ -24,7 +24,6 @@
         android:textAlignment="center"
         android:textColor="#143F76"
         android:textColorHighlight="#AEC1BF" />
-
 
 
 </LinearLayout>
