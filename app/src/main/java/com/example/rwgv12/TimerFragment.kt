@@ -7,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import java.util.Timer
 import java.util.TimerTask
@@ -19,8 +18,6 @@ class TimerFragment : Fragment() {
     private var isRunning = false
     private var task: TimerTask? = null
     private var isDurationSelected = false
-
-
     private lateinit var timerTextView: TextView
     private lateinit var startStopButton: Button
     private lateinit var resetButton: Button
@@ -87,7 +84,6 @@ class TimerFragment : Fragment() {
             view.findViewById<Button>(R.id.buttonThirty)
                 .setBackgroundColor(resources.getColor(android.R.color.transparent))
         }
-
         return view
     }
 
@@ -95,7 +91,6 @@ class TimerFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         startStopButton.setOnClickListener {
-
             if (isRunning) {
                 stopTimer()
             } else {
@@ -109,7 +104,6 @@ class TimerFragment : Fragment() {
     }
 
     private fun startTimer() {
-
         if (!isRunning) {
             isRunning = true
             // Update UI when timer starts
@@ -131,8 +125,6 @@ class TimerFragment : Fragment() {
         }
     }
 
-
-
     private fun stopTimer() {
         task?.cancel()
         isRunning = false
@@ -148,7 +140,6 @@ class TimerFragment : Fragment() {
         readyTextView.visibility = View.GONE  // Hide readyTextView
         selectDurationTextView.visibility = View.VISIBLE  // Show selectDurationTextView
     }
-
 
     private fun updateTimerText() {
         val timerText = "$count"
