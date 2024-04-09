@@ -51,7 +51,7 @@ class TimerFragment : Fragment() {
             startStopButton.isEnabled = true
             resetButton.isEnabled = false
             isDurationSelected = true
-            it.setBackgroundColor(resources.getColor(R.color.light_grey)) // Reset background color of other buttons
+            it.setBackgroundColor(resources.getColor(R.color.black)) // Reset background color of other buttons
             view.findViewById<Button>(R.id.buttonThirty)
                 .setBackgroundColor(resources.getColor(android.R.color.transparent))
             view.findViewById<Button>(R.id.buttonFortyFive)
@@ -66,7 +66,8 @@ class TimerFragment : Fragment() {
             startStopButton.isEnabled = true
             resetButton.isEnabled = false
             isDurationSelected = true
-            it.setBackgroundColor(resources.getColor(R.color.light_grey)) // Reset background color of other buttons
+            it.setBackgroundColor(resources.getColor(R.color.black))
+// Reset background color of other buttons
             view.findViewById<Button>(R.id.buttonTwenty)
                 .setBackgroundColor(resources.getColor(android.R.color.transparent))
             view.findViewById<Button>(R.id.buttonFortyFive)
@@ -81,7 +82,7 @@ class TimerFragment : Fragment() {
             startStopButton.isEnabled = true
             resetButton.isEnabled = false
             isDurationSelected = true
-            it.setBackgroundColor(resources.getColor(R.color.light_grey)) // Reset background color of other buttons
+            it.setBackgroundColor(resources.getColor(R.color.black)) // Reset background color of other buttons
             view.findViewById<Button>(R.id.buttonTwenty)
                 .setBackgroundColor(resources.getColor(android.R.color.transparent))
             view.findViewById<Button>(R.id.buttonThirty)

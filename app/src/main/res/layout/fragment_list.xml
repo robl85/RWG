@@ -6,24 +6,24 @@
 
     <Button
         android:id="@+id/refreshButton"
+        style="@style/ModernButtonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="16dp"
-        android:text="Refresh List" />
+        android:background="#757575"
+        android:text="Shuffle List"
+        android:textColor="@color/white" />
+
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/exerciseRecyclerView"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:background="#007DA1B7"
         android:clipToPadding="false"
         android:padding="10dp"
         android:scrollIndicators="right"
-        android:textAlignment="center"
-        android:textColor="#143F76"
-        android:textColorHighlight="#AEC1BF" />
-
+        android:textAlignment="center" />
 
 </LinearLayout>

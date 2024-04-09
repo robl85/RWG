@@ -4,5 +4,25 @@
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
     </style>
+    <!-- styles.xml -->
+    <style name="ModernButtonStyle" parent="Widget.AppCompat.Button">
+        <!-- Text appearance -->
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+
+        <!-- Background -->
+        <item name="android:background">@drawable/modern_button_background</item>
+
+        <!-- Padding -->
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:paddingStart">24dp</item>
+        <item name="android:paddingEnd">24dp</item>
+
+        <!-- Other attributes -->
+        <item name="android:gravity">center</item>
+        <item name="android:clickable">true</item>
+    </style>
 
 </resources>
