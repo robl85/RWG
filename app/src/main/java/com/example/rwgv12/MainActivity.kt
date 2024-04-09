@@ -10,12 +10,12 @@ class MainActivity : AppCompatActivity() {
 
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
-                .replace(R.id.timerFragment, TimerFragment())
+                .replace(R.id.timerFragmentContainerView, TimerFragment())
                 .commit()
         }
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
-                .replace(R.id.listFragment, ListFragment())
+                .replace(R.id.listFragmentContainerView, ListFragment())
                 .commit()
         }
     }

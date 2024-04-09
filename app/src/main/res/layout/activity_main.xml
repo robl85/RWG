@@ -1,33 +1,31 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
+    <!-- Background Fragment -->
     <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/fragmentContainerView"
+        android:id="@+id/bgFragmentContainerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:name="com.example.rwgv12.BgFragment"
         tools:layout="@layout/fragment_bg" />
 
+    <!-- Timer Fragment -->
     <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/timerFragment"
+        android:id="@+id/timerFragmentContainerView"
+        android:name="com.example.rwgv12.TimerFragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:layout="@layout/fragment_timer2"
-        android:name="com.example.rwgv12.TimerFragment" />
+        tools:layout="@layout/fragment_timer2" />
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
+    <!-- List Fragment -->
     <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/listFragment"
+        android:id="@+id/listFragmentContainerView"
         android:layout_width="match_parent"
-        android:layout_height="340dp"
-        android:layout_gravity="bottom"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timerFragmentContainerView"
+        android:name="com.example.rwgv12.ListFragment"
         tools:layout="@layout/fragment_list" />
 
-</FrameLayout>
 </RelativeLayout>
