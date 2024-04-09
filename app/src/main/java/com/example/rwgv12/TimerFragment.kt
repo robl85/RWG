@@ -48,7 +48,8 @@ class TimerFragment : Fragment() {
         view.findViewById<Button>(R.id.buttonTwenty).setOnClickListener {
             selectedDuration = 20
             selectDurationTextView.visibility = View.GONE
-            readyTextView.visibility = View.VISIBLE
+            timerTextView.visibility = View.VISIBLE
+            timerTextView.text = "Time: $count | Reps: $reps"
             startStopButton.isEnabled = true
             resetButton.isEnabled = false
             isDurationSelected = true
@@ -62,7 +63,8 @@ class TimerFragment : Fragment() {
         view.findViewById<Button>(R.id.buttonThirty).setOnClickListener {
             selectedDuration = 30
             selectDurationTextView.visibility = View.GONE
-            readyTextView.visibility = View.VISIBLE
+            timerTextView.visibility = View.VISIBLE
+            timerTextView.text = "Time: $count | Reps: $reps"
             startStopButton.isEnabled = true
             resetButton.isEnabled = false
             isDurationSelected = true
@@ -76,7 +78,8 @@ class TimerFragment : Fragment() {
         view.findViewById<Button>(R.id.buttonFortyFive).setOnClickListener {
             selectedDuration = 45
             selectDurationTextView.visibility = View.GONE
-            readyTextView.visibility = View.VISIBLE
+            timerTextView.visibility = View.VISIBLE
+            timerTextView.text = "Time: $count | Reps: $reps"
             startStopButton.isEnabled = true
             resetButton.isEnabled = false
             isDurationSelected = true
@@ -93,6 +96,7 @@ class TimerFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         startStopButton.setOnClickListener {
+            resetButton.isEnabled = true
             if (isRunning) {
                 stopTimer()
             } else {
@@ -149,7 +153,7 @@ class TimerFragment : Fragment() {
         readyTextView.textSize = 40f
         timerTextView.text = "Time: 0 | Reps: 0"
         timerTextView.visibility = View.GONE
-        restWorkTextView.visibility = View.GONE
+        restWorkTextView.text = ""
         selectDurationTextView.visibility = View.VISIBLE
     }
 

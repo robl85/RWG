@@ -78,11 +78,10 @@
         android:layout_gravity="center_horizontal"
         android:layout_margin="10dp"
         android:layout_marginBottom="0dp"
-        android:text="Ready"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="#143F76"
         android:textColorHighlight="#AEC1BF"
-        android:textSize="40sp"
+        android:textSize="38sp"
         android:textStyle="bold"
         android:typeface="monospace"
         android:visibility="gone" />
