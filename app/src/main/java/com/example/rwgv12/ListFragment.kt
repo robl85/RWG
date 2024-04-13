@@ -12,16 +12,7 @@ import androidx.recyclerview.widget.RecyclerView
 
 class ListFragment : Fragment() {
     private val exerciseList = mutableListOf(
-        "Push-ups", "Crunches", "Squats", "Plank", "Burpees", "Squats",
-        "Lunges", "Reverse lunges", "Sidestep lunges", "Squat shuffle", "Jumping lunges",
-        "Squat jumps", "Push ups", "Narrow push ups", "Dips", "Crunches",
-        "Crunches legs up touch behind legs", "Bicycle crunches", "High plank", "Side plank",
-        "High plank shoulder tap", "High plank bear crawl", "Running on the spot",
-        "Running punches", "Mountain climbers", "Crawl out to climbers", "Ladder climb",
-        "Mountain climb to side plank", "Star jumps", "Lateral skiiers", "Box jumps",
-        "High knees", "Butt kicks", "Leg raises", "Crunches feet up", "Side crunch heel touches",
-        "Hip thrusts", "Seated twists", "Double squat thrusts", "Squat hold", "Pop squat",
-        "Low sprint", "Knee drives", "Spiderman lunges"
+        "Burpees", "Mountain Climbers", "Push-up Jacks", "Plank Shoulder Taps", "Commando Rows", "Plyometric Push-ups", "Bicycle Crunches", "Superman", "Jumping Jacks", "High Knees", "Spiderman Push-ups", "Plank Jacks", "Russian Twists", "Incline Push-ups", "Diamond Push-ups", "Punches (without weights)", "Shoulder Press (using bodyweight)", "Chest Press (using bodyweight)", "Bicep Curls (using resistance bands or bodyweight)", "Tricep Extensions (using bodyweight)", "Plank to Push-up", "Shoulder Circles", "Handstand Push-ups (against a wall)", "Walking Push-ups", "Shoulder Taps (standing or plank)", "Push-up Variations (e.g., clapping, staggered, one-arm)", "Side Plank Hip Dips", "Bodyweight Squats", "Lunges (Reverse)", "Jump Squats", "Jump Lunges", "Bulgarian Split Squats", "Curtsy Lunges", "Single-Leg Squats (Pistol Squats)", "Calf Raises", "Glute Bridges", "Single-Leg Glute Bridges", "Donkey Kicks", "Fire Hydrants", "Wall Sits", "Side Lunges", "Plie Squats", "Skater Jumps", "High Knees", "Butt Kicks", "Standing Leg Lifts", "Sumo Squats", "Frog Jumps", "Bear Crawls", "Crab Walks", "Mountain Climbers", "Standing Calf Raises", "Side Plank Leg Lifts", "Wall Sit with Leg Lifts", "Jumping Jacks", "Side-to-Side Squat Jumps", "Squat Pulses", "Reverse Lunges with Knee Drive", "Skater Squats", "Duck Walks", "Standing Hip Circles", "Forward and Backward Leg Swings", "Side Leg Swings", "Lateral Leg Raises", "Standing Knee to Elbow", "Standing Donkey Kicks", "Standing Fire Hydrants", "Standing Knee Circles", "Lunges (Forward)", "Plank", "Side Plank", "Bicycle Crunches", "Russian Twists", "Mountain Climbers", "Flutter Kicks", "Leg Raises", "Sit-ups", "Crunches", "Reverse Crunches", "Superman", "Bird Dogs", "Dead Bug", "Hollow Hold", "V-Ups", "Scissor Kicks", "Plank Jacks", "Spiderman Plank", "Commando Plank", "Side Plank with Hip Dip", "Plank with Shoulder Taps", "Plank with Knee to Elbow", "Boat pose", "Knee Tucks"
     )
 
     private var currentIndex = 0

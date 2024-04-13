@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/allExercisesButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="All Exercises"
+        android:layout_margin="10dp"
+        style="@style/ModernButtonStyle" />
+
+
+    <Button
+        android:id="@+id/UpperNoEquipmentExercisesButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upper body only- No equipment"
+        android:layout_margin="10dp"
+        style="@style/ModernButtonStyle" />
+
+
+    <Button
+        android:id="@+id/UpperWithEquipmentExercisesButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upper body only- With equipment"
+        android:layout_margin="10dp"
+        style="@style/ModernButtonStyle" />
+
+
+    <Button
+        android:id="@+id/LowerNoEquipmentExercisesButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lower body only- No equipment"
+        android:layout_margin="10dp"
+        style="@style/ModernButtonStyle" />
+
+
+    <Button
+        android:id="@+id/LowerWithEquipmentExercisesButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lower body only- With equipment"
+        android:layout_margin="10dp"
+        style="@style/ModernButtonStyle" />
+
+
+    <Button
+        android:id="@+id/CoreNoEquipmentExercisesButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Core only- No equipment"
+        android:layout_margin="10dp"
+        style="@style/ModernButtonStyle" />
+
+
+    <Button
+        android:id="@+id/CoreWithEquipmentExercisesButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Core only- With equipment"
+        android:layout_margin="10dp"
+        style="@style/ModernButtonStyle" />
+
+
+    <Button
+        android:id="@+id/YogaExerciseButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Yoga exercises only"
+        android:layout_margin="10dp"
+        style="@style/ModernButtonStyle" />
+
+</LinearLayout>

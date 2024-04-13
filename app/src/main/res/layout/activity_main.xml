@@ -25,7 +25,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/timerFragmentContainerView"
+        android:layout_above="@id/textView"
         android:name="com.example.rwgv12.ListFragment"
         tools:layout="@layout/fragment_list" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/light_grey"
+        android:padding="5dp"
+        android:text="Powered by Oracle Labs"
+        android:textAlignment="textEnd"
+        android:textColor="#000000" />
 
 </RelativeLayout>
