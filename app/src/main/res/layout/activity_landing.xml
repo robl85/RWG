@@ -1,12 +1,49 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <!-- Background Image -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background"
+        android:alpha="0.2" />
+
+    <!-- Main Content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/landingPageText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="1. Select your workout\n\n\n2. Set work/rest duration\n\n\n3. Shuffle the exercise list\n\n\n4. Begin!"
+            android:textAlignment="center"
+            android:textColor="#143F76"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <!-- Other Views -->
+
+    </LinearLayout>
+
+    <!-- Powered By TextView -->
     <TextView
-        android:id="@+id/landingPageText"
+        android:id="@+id/poweredByTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Landing Page" />
-</LinearLayout>
+        android:layout_alignParentBottom="true"
+        android:background="@color/light_grey"
+        android:padding="5dp"
+        android:text="Powered by Oracle Labs"
+        android:textAlignment="textEnd"
+        android:textColor="#000000" />
+
+</RelativeLayout>

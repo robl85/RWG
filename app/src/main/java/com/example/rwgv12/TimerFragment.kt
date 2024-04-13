@@ -1,7 +1,6 @@
 package com.example.rwgv12
 
 import android.os.Bundle
-import android.util.TypedValue
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -31,7 +30,7 @@ class TimerFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.fragment_timer2, container, false)
+        val view = inflater.inflate(R.layout.fragment_timer, container, false)
         timerTextView = view.findViewById(R.id.selectDurationTextView)
         startStopButton = view.findViewById(R.id.startStopButton)
         resetButton = view.findViewById(R.id.resetButton)

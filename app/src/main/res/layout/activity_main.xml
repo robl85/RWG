@@ -17,7 +17,7 @@
         android:name="com.example.rwgv12.TimerFragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:layout="@layout/fragment_timer2" />
+        tools:layout="@layout/fragment_timer" />
 
     <!-- List Fragment -->
     <androidx.fragment.app.FragmentContainerView
@@ -25,12 +25,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/timerFragmentContainerView"
-        android:layout_above="@id/textView"
-        android:name="com.example.rwgv12.ListFragment"
+        android:layout_above="@id/poweredByTextView"
+        android:name="com.example.rwgv12.ListFragmentAll"
         tools:layout="@layout/fragment_list" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/poweredByTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
