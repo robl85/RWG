@@ -14,10 +14,12 @@ class LandingActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_landing)
 
-        // Using Handler to post a delayed action to start MainActivity
+        // Using Handler to post a delayed action to start SelectionActivity
         Handler().postDelayed({
             // Start SelectionActivity
-            val intent = Intent(this@LandingActivity, SelectionActivity::class.java)
+            val intent = Intent(this@LandingActivity, SelectionActivity::class.java).apply {
+                flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+            }
             startActivity(intent)
             finish() // Finish the current activity to prevent users from navigating back to it
         }, DELAY_MS)

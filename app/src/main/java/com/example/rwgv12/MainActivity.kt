@@ -1,5 +1,6 @@
 package com.example.rwgv12
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 
@@ -90,4 +91,13 @@ class MainActivity : AppCompatActivity() {
             .replace(R.id.listFragmentContainerView, ListFragmentFloor())
             .commit()
     }
+    override fun onBackPressed() {
+        super.onBackPressed()
+        val intent = Intent(this, SelectionActivity::class.java).apply {
+            flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+        }
+        startActivity(intent)
+        finish()
+    }
+
 }

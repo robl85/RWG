@@ -87,6 +87,17 @@ class TimerFragment : Fragment() {
             view.findViewById<Button>(R.id.buttonThirty)
                 .setBackgroundColor(resources.getColor(android.R.color.transparent))
         }
+
+        // Restore state if savedInstanceState is not null
+        savedInstanceState?.let { bundle ->
+            count = bundle.getInt("count")
+            reps = bundle.getInt("reps")
+            isRunning = bundle.getBoolean("isRunning")
+            selectedDuration = bundle.getInt("selectedDuration")
+            isDurationSelected = bundle.getBoolean("isDurationSelected")
+            if (isRunning) startTimer()
+        }
+
         return view
     }
 
@@ -107,6 +118,16 @@ class TimerFragment : Fragment() {
         }
     }
 
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        // Save the current state of the timer
+        outState.putInt("count", count)
+        outState.putInt("reps", reps)
+        outState.putBoolean("isRunning", isRunning)
+        outState.putInt("selectedDuration", selectedDuration)
+        outState.putBoolean("isDurationSelected", isDurationSelected)
+    }
+
     private fun startTimer() {
         if (!isRunning) {
             isRunning = true
@@ -115,20 +136,26 @@ class TimerFragment : Fragment() {
             timerTextView.visibility = View.VISIBLE
             restWorkTextView.visibility = View.VISIBLE
             resetButton.isEnabled = true
+            var repCounted = false // Flag to track whether rep has been counted for the current cycle
             // Start the timer task
             task = timer.scheduleAtFixedRate(0, 1000) {
                 activity?.runOnUiThread {
                     count++
                     updateTimerText()
+                    if (count >= selectedDuration && !repCounted) {
+                        reps++
+                        repCounted = true // Set flag to true once rep is counted
+                    }
                     if (count >= 60) {
                         count = 0
-                        reps++
+                        repCounted = false // Reset flag when timer passes 60
                     }
                     updatetimerTextView()
                 }
             }
         }
     }
+
 
     private fun updatetimerTextView() {
         timerTextView.text = "Time: $count | Reps: $reps"
@@ -159,5 +186,15 @@ class TimerFragment : Fragment() {
             "Rest..."
         }
         restWorkTextView.text = restWorkText
+    }
+    private fun handleDurationButtonClicked() {
+        startStopButton.isEnabled = true
+        resetButton.isEnabled = false
+        isDurationSelected = true
+        selectDurationTextView.visibility = View.GONE
+        timerTextView.visibility = View.VISIBLE
+        timerTextView.textSize = 40f
+        timerTextView.text = "Time: $count | Reps: $reps"
+        restWorkTextView.visibility = View.VISIBLE
     }
 }
