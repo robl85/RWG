@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
+import androidx.compose.ui.graphics.Color
 import androidx.fragment.app.Fragment
 import java.util.Timer
 import java.util.TimerTask
@@ -174,6 +175,11 @@ class TimerFragment : Fragment() {
         timerTextView.visibility = View.GONE
         restWorkTextView.text = ""
         selectDurationTextView.visibility = View.VISIBLE
+        view?.findViewById<Button>(R.id.buttonTwenty)?.setBackgroundColor(resources.getColor(android.R.color.transparent))
+        view?.findViewById<Button>(R.id.buttonThirty)?.setBackgroundColor(resources.getColor(android.R.color.transparent))
+        view?.findViewById<Button>(R.id.buttonFortyFive)?.setBackgroundColor(resources.getColor(android.R.color.transparent))
+        isDurationSelected = false
+        startStopButton.isEnabled = false
     }
 
     private fun updateTimerText() {

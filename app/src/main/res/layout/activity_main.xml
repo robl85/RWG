@@ -1,4 +1,4 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -11,33 +11,46 @@
         android:name="com.example.rwgv12.BgFragment"
         tools:layout="@layout/fragment_bg" />
 
-    <!-- Timer Fragment -->
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/timerFragmentContainerView"
-        android:name="com.example.rwgv12.TimerFragment"
+    <!-- NestedScrollView to allow scrolling -->
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:layout="@layout/fragment_timer" />
+        android:layout_height="match_parent"
+        android:clipToPadding="false">
 
-    <!-- List Fragment -->
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/listFragmentContainerView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/timerFragmentContainerView"
-        android:layout_above="@id/poweredByTextView"
-        android:name="com.example.rwgv12.ListFragmentAll"
-        tools:layout="@layout/fragment_list" />
+        <!-- Linear layout for vertical stacking of fragments -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
+            <!-- Timer Fragment -->
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/timerFragmentContainerView"
+                android:name="com.example.rwgv12.TimerFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:layout="@layout/fragment_timer" />
+
+            <!-- List Fragment -->
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/listFragmentContainerView"
+                android:name="com.example.rwgv12.ListFragmentAll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:layout="@layout/fragment_list" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- Powered By TextView -->
     <TextView
         android:id="@+id/poweredByTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
         android:background="@color/light_grey"
         android:padding="5dp"
         android:text="Powered by Oracle Labs"
-        android:textAlignment="textEnd"
         android:textColor="#000000" />
 
-</RelativeLayout>
+</FrameLayout>

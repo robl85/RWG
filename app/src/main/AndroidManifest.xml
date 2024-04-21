@@ -16,7 +16,7 @@
             android:name=".SelectionActivity"
             android:label="@string/title_activity_selection"
             android:theme="@style/AppTheme"
-            android:launchMode="standard"> <!-- Set launchMode to standard -->
+            android:launchMode="standard">
         </activity>
 
         <activity
@@ -24,7 +24,7 @@
             android:exported="true"
             android:label="@string/title_activity_landing"
             android:theme="@style/AppTheme"
-            android:launchMode="standard"> <!-- Set launchMode to standard -->
+            android:launchMode="standard">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

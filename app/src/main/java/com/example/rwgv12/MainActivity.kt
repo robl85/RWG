@@ -23,8 +23,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-
-        // Load the appropriate fragment based on the data received
         when (intent.getIntExtra("FRAGMENT_TO_LOAD", FragmentConstants.ListFragmentAll)) {
             FragmentConstants.ListFragmentAll -> loadFragmentA()
             FragmentConstants.ListFragmentUpperNo -> loadFragmentB()
@@ -97,7 +95,6 @@ class MainActivity : AppCompatActivity() {
             flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
         }
         startActivity(intent)
-        finish()
     }
 
 }
