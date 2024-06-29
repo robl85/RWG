@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView
 
 class ListFragmentLowImpact : Fragment() {
     private val lowImpactExerciseList = mutableListOf(
-        "March in Place", "Wall Sit", "Bodyweight Squats", "Stationary Lunges", "Calf Raises", "Glute Bridges", "Clamshells", "Side Leg Raises", "Donkey Kicks", "Fire Hydrants", "Standing Leg Swings", "Arm Circles", "Knee Lifts", "Side-to-Side Leg Swings", "Hip Circles", "Leg Circles", "Arm Raises (front, side, and back)", "Chair Squats", "Seated Leg Extensions", "Seated Leg Presses", "Seated Marches", "Seated Knee Lifts", "Seated Leg Raises", "Seated Arm Circles", "Seated Torso Twists", "Seated Tricep Dips", "Wall Push-ups", "Incline Push-ups (using a sturdy surface like a countertop)", "Plank", "Modified Plank (on knees)", "Side Plank", "Bird Dogs"
+        "March in Place", "Wall Sit", "Bodyweight Squats", "Stationary Lunges", "Calf Raises", "Glute Bridges", "Clamshells", "Side Leg Raises", "Donkey Kicks", "Fire Hydrants", "Standing Leg Swings", "Knee Lifts", "Side-to-Side Leg Swings", "Hip Circles", "Leg Circles", "Chair Squats", "Seated Leg Extensions", "Seated Leg Presses", "Seated Marches", "Seated Knee Lifts", "Seated Leg Raises", "Seated Arm Circles", "Seated Torso Twists", "Seated Tricep Dips", "Wall Push-ups", "Incline Push-ups (using a sturdy surface like a countertop)", "Plank", "Modified Plank (on knees)", "Side Plank"
     )
 
     override fun onCreateView(

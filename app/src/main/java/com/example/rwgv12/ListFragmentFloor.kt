@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView
 
 class ListFragmentFloor : Fragment() {
     private val floorExerciseList = mutableListOf(
-        "Seated Leg Raises", "Seated Leg Extensions", "Seated Torso Twists", "Seated Tricep Dips", "Seated Bicep Curls", "Seated Shoulder Raises", "Seated Chest Presses", "Seated Rows", "Wall Sit", "Chair Squats", "Chair Leg Raises", "Chair Side Leg Raises", "Chair Toe Taps", "Chair Crunches", "Chair Leg Circles", "Chair Hip Circles", "Chair Shoulder Rolls", "Chair Arm Raises (front, side, and back)", "Lying Leg Raises", "Lying Glute Bridges", "Lying Hip Abductions", "Lying Knee Tucks", "Lying Hamstring Curls", "Lying Side Leg Raises", "Lying Clamshells", "Lying Arm Raises (front, side, and back)", "Lying Bicep Curls", "Lying Tricep Extensions", "Lying Shoulder Presses", "Lying Chest Flyes", "Lying Rows", "Lying Superman", "Lying Spinal Twist"
+        "Seated Leg Raises", "Seated Leg Extensions", "Seated Torso Twists", "Wall Sit", "Lying Leg Raises", "Lying Glute Bridges", "Lying Hip Abductions", "Lying Knee Tucks", "Lying Hamstring Curls", "Lying Side Leg Raises", "Lying Clamshells", "Lying Superman", "Lying Spinal Twist"
     )
 
     override fun onCreateView(

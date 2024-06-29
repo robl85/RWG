@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView
 
 class ListFragmentUpperNo : Fragment() {
     private val upperNoExerciseList = mutableListOf(
-        "Burpees", "Mountain Climbers", "Push-up Jacks", "Plank Shoulder Taps", "Commando Rows", "Plyometric Push-ups", "Bicycle Crunches", "Superman", "Jumping Jacks", "High Knees", "Spiderman Push-ups", "Plank Jacks", "Russian Twists", "Incline Push-ups", "Diamond Push-ups", "Punches (without weights)", "Shoulder Press (using bodyweight)", "Chest Press (using bodyweight)", "Bicep Curls (using resistance bands or bodyweight)", "Tricep Extensions (using bodyweight)", "Plank to Push-up", "Shoulder Circles", "Handstand Push-ups (against a wall)", "Walking Push-ups", "Shoulder Taps (standing or plank)", "Push-up Variations (e.g., clapping, staggered, one-arm)", "Side Plank Hip Dips"
+        "Burpees", "Mountain Climbers", "Push-up Jacks", "Plank Shoulder Taps", "Plyometric Push-ups", "Incline Push-ups", "Diamond Push-ups", "Punches (without weights)", "Plank to Push-up", "Handstand Push-ups (against a wall)", "Walking Push-ups", "Shoulder Taps (standing or plank)", "Push-up Variations (e.g., clapping, staggered, one-arm)"
     )
 
     override fun onCreateView(
