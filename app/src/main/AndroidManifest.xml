@@ -22,7 +22,6 @@
         <activity
             android:name=".LandingActivity"
             android:exported="true"
-            android:label="@string/title_activity_landing"
             android:theme="@style/AppTheme"
             android:launchMode="standard">
             <intent-filter>
