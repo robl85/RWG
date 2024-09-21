@@ -4,20 +4,18 @@ plugins {
 }
 
 android {
-    namespace = "com.example.rwgv12"
+    namespace = "com.oraclelabs.workoutgenerator" // Change this to your desired package name
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.rwgv12"
+        applicationId = "com.oraclelabs.workoutgenerator" // Change this too
         minSdk = 24
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
-
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
             useSupportLibrary = true
-
         }
     }
 

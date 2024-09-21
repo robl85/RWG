@@ -4,7 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import androidx.appcompat.app.AppCompatActivity
-import com.example.rwgv12.R
+import com.oraclelabs.workoutgenerator.R;
 
 class LandingActivity : AppCompatActivity() {
 

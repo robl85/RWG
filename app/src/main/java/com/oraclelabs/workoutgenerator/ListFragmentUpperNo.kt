@@ -8,7 +8,7 @@ import android.widget.Button
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.rwgv12.R
+import com.oraclelabs.workoutgenerator.R;
 
 
 class ListFragmentUpperNo : Fragment() {
