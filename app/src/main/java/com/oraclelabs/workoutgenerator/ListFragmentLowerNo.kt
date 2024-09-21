@@ -1,4 +1,4 @@
-package com.example.rwgv12
+package com.oraclelabs.workoutgenerator
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,11 +8,12 @@ import android.widget.Button
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.rwgv12.R
 
 
-class ListFragmentLowImpact : Fragment() {
-    private val lowImpactExerciseList = mutableListOf(
-        "March in Place", "Wall Sit", "Bodyweight Squats", "Stationary Lunges", "Calf Raises", "Glute Bridges", "Clamshells", "Side Leg Raises", "Donkey Kicks", "Fire Hydrants", "Standing Leg Swings", "Knee Lifts", "Side-to-Side Leg Swings", "Hip Circles", "Leg Circles", "Chair Squats", "Seated Leg Extensions", "Seated Leg Presses", "Seated Marches", "Seated Knee Lifts", "Seated Leg Raises", "Seated Arm Circles", "Seated Torso Twists", "Seated Tricep Dips", "Wall Push-ups", "Incline Push-ups (using a sturdy surface like a countertop)", "Plank", "Modified Plank (on knees)", "Side Plank"
+class ListFragmentLowerNo : Fragment() {
+    private val lowerNoExerciseList = mutableListOf(
+        "Bodyweight Squats", "Lunges (Reverse)", "Jump Squats", "Jump Lunges", "Bulgarian Split Squats", "Curtsy Lunges", "Single-Leg Squats (Pistol Squats)", "Calf Raises", "Glute Bridges", "Single-Leg Glute Bridges", "Donkey Kicks", "Fire Hydrants", "Wall Sits", "Side Lunges", "Plie Squats", "Skater Jumps", "High Knees", "Butt Kicks", "Standing Leg Lifts", "Sumo Squats", "Frog Jumps", "Bear Crawls", "Crab Walks", "Standing Calf Raises", "Wall Sit with Leg Lifts", "Jumping Jacks", "Side-to-Side Squat Jumps", "Squat Pulses", "Reverse Lunges with Knee Drive", "Skater Squats", "Duck Walks", "Standing Hip Circles", "Forward and Backward Leg Swings", "Side Leg Swings", "Lateral Leg Raises", "Standing Knee to Elbow", "Standing Donkey Kicks", "Standing Fire Hydrants", "Standing Knee Circles", "Lunges (Forward)"
     )
 
     override fun onCreateView(
@@ -27,7 +28,7 @@ class ListFragmentLowImpact : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         // Shuffle the exercise list
-        lowImpactExerciseList.shuffle()
+        lowerNoExerciseList.shuffle()
 
         // Find the RecyclerView
         val recyclerView: RecyclerView = view.findViewById(R.id.exerciseRecyclerView)
@@ -36,7 +37,7 @@ class ListFragmentLowImpact : Fragment() {
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
 
         // Create and set up the adapter
-        val adapter = ExerciseAdapter(lowImpactExerciseList)
+        val adapter = ExerciseAdapter(lowerNoExerciseList)
         recyclerView.adapter = adapter
 
         // Find the refresh button
@@ -45,7 +46,7 @@ class ListFragmentLowImpact : Fragment() {
         // Set click listener for the refresh button
         refreshButton.setOnClickListener {
             // Shuffle the exercise list again
-            lowImpactExerciseList.shuffle()
+            lowerNoExerciseList.shuffle()
 
             // Notify the adapter that the dataset has changed
             adapter.notifyDataSetChanged()

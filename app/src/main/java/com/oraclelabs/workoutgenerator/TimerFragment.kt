@@ -1,4 +1,4 @@
-package com.example.rwgv12
+package com.oraclelabs.workoutgenerator
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,8 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
-import androidx.compose.ui.graphics.Color
 import androidx.fragment.app.Fragment
+import com.example.rwgv12.R
 import java.util.Timer
 import java.util.TimerTask
 import kotlin.concurrent.scheduleAtFixedRate

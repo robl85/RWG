@@ -1,4 +1,4 @@
-package com.example.rwgv12
+package com.oraclelabs.workoutgenerator
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,6 +8,7 @@ import android.widget.Button
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.rwgv12.R
 
 
 class ListFragmentLowerWith : Fragment() {

@@ -1,4 +1,4 @@
-package com.example.rwgv12
+package com.oraclelabs.workoutgenerator
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,11 +8,12 @@ import android.widget.Button
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.rwgv12.R
 
 
-class ListFragmentUpperNo : Fragment() {
-    private val upperNoExerciseList = mutableListOf(
-        "Burpees", "Mountain Climbers", "Push-up Jacks", "Plank Shoulder Taps", "Plyometric Push-ups", "Incline Push-ups", "Diamond Push-ups", "Punches (without weights)", "Plank to Push-up", "Handstand Push-ups (against a wall)", "Walking Push-ups", "Shoulder Taps (standing or plank)", "Push-up Variations (e.g., clapping, staggered, one-arm)"
+class ListFragmentFloor : Fragment() {
+    private val floorExerciseList = mutableListOf(
+        "Seated Leg Raises", "Seated Leg Extensions", "Seated Torso Twists", "Wall Sit", "Lying Leg Raises", "Lying Glute Bridges", "Lying Hip Abductions", "Lying Knee Tucks", "Lying Hamstring Curls", "Lying Side Leg Raises", "Lying Clamshells", "Lying Superman", "Lying Spinal Twist"
     )
 
     override fun onCreateView(
@@ -27,7 +28,7 @@ class ListFragmentUpperNo : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         // Shuffle the exercise list
-        upperNoExerciseList.shuffle()
+        floorExerciseList.shuffle()
 
         // Find the RecyclerView
         val recyclerView: RecyclerView = view.findViewById(R.id.exerciseRecyclerView)
@@ -36,7 +37,7 @@ class ListFragmentUpperNo : Fragment() {
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
 
         // Create and set up the adapter
-        val adapter = ExerciseAdapter(upperNoExerciseList)
+        val adapter = ExerciseAdapter(floorExerciseList)
         recyclerView.adapter = adapter
 
         // Find the refresh button
@@ -45,7 +46,7 @@ class ListFragmentUpperNo : Fragment() {
         // Set click listener for the refresh button
         refreshButton.setOnClickListener {
             // Shuffle the exercise list again
-            upperNoExerciseList.shuffle()
+            floorExerciseList.shuffle()
 
             // Notify the adapter that the dataset has changed
             adapter.notifyDataSetChanged()

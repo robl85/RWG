@@ -1,10 +1,11 @@
-package com.example.rwgv12
+package com.oraclelabs.workoutgenerator
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.rwgv12.R
 
 class ExerciseAdapter(private val exercises: List<String>) :
     RecyclerView.Adapter<ExerciseAdapter.ExerciseViewHolder>() {

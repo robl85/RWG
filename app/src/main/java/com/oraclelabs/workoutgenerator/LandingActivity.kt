@@ -1,9 +1,10 @@
-package com.example.rwgv12
+package com.oraclelabs.workoutgenerator;
 
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import androidx.appcompat.app.AppCompatActivity
+import com.example.rwgv12.R
 
 class LandingActivity : AppCompatActivity() {
 

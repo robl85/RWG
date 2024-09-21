@@ -1,9 +1,10 @@
-package com.example.rwgv12
+package com.oraclelabs.workoutgenerator
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.activity.ComponentActivity
+import com.example.rwgv12.R
 
 class SelectionActivity : ComponentActivity() {
     private lateinit var allExercisesButton: Button

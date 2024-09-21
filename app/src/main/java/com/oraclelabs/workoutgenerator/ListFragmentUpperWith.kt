@@ -1,4 +1,4 @@
-package com.example.rwgv12
+package com.oraclelabs.workoutgenerator
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,11 +8,12 @@ import android.widget.Button
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.rwgv12.R
 
 
-class ListFragmentFloor : Fragment() {
-    private val floorExerciseList = mutableListOf(
-        "Seated Leg Raises", "Seated Leg Extensions", "Seated Torso Twists", "Wall Sit", "Lying Leg Raises", "Lying Glute Bridges", "Lying Hip Abductions", "Lying Knee Tucks", "Lying Hamstring Curls", "Lying Side Leg Raises", "Lying Clamshells", "Lying Superman", "Lying Spinal Twist"
+class ListFragmentUpperWith : Fragment() {
+    private val upperWithExerciseList = mutableListOf(
+        "Dumbbell Thrusters", "Renegade Rows", "Medicine Ball Slams", "Shoulder Press", "Chest Press", "Bicep Curls", "Tricep Extensions", "Lateral Raises", "Russian Twists with weight", "Box Jumps", "Pull-ups", "Chin-ups", "Dumbbell Rows", "Upright Rows", "Medicine Ball Push-ups", "Battle Rope Waves", "Kettlebell Swings", "Rows- Resistance bands", "Pushups- Resistance bands", "Chest Press- Resistance bands", "Bicep Curls- Resistance bands", "Tricep Extensions- Resistance bands", "Pike Pushups- Resistance bands", "Y Raises- Resistance bands", "T Raises- Resistance bands", "W Raises- Resistance bands", "Atomic Pushups- Resistance bands", "Inverted Rows- Resistance bands", "Inverted Bicep Curls- Resistance bands", "Inverted Tricep Extensions- Resistance bands", "Singlearm Rows- Resistance bands", "Singlearm Bicep Curls- Resistance bands", "Singlearm Tricep Extensions- Resistance bands", "Suspended Pushups- Resistance bands", "Suspended Atomic Pushups- Resistance bands", "Suspended Burpees- Resistance bands"
     )
 
     override fun onCreateView(
@@ -27,7 +28,7 @@ class ListFragmentFloor : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         // Shuffle the exercise list
-        floorExerciseList.shuffle()
+        upperWithExerciseList.shuffle()
 
         // Find the RecyclerView
         val recyclerView: RecyclerView = view.findViewById(R.id.exerciseRecyclerView)
@@ -36,7 +37,7 @@ class ListFragmentFloor : Fragment() {
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
 
         // Create and set up the adapter
-        val adapter = ExerciseAdapter(floorExerciseList)
+        val adapter = ExerciseAdapter(upperWithExerciseList)
         recyclerView.adapter = adapter
 
         // Find the refresh button
@@ -45,7 +46,7 @@ class ListFragmentFloor : Fragment() {
         // Set click listener for the refresh button
         refreshButton.setOnClickListener {
             // Shuffle the exercise list again
-            floorExerciseList.shuffle()
+            upperWithExerciseList.shuffle()
 
             // Notify the adapter that the dataset has changed
             adapter.notifyDataSetChanged()

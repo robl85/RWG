@@ -1,4 +1,4 @@
-package com.example.rwgv12.ui.theme
+package com.oraclelabs.workoutgenerator.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

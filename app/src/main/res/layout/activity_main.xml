@@ -8,7 +8,7 @@
         android:id="@+id/bgFragmentContainerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:name="com.example.rwgv12.BgFragment"
+        android:name="com.oraclelabs.workoutgenerator.BgFragment"
         tools:layout="@layout/fragment_bg" />
 
     <!-- NestedScrollView to allow scrolling -->
@@ -26,7 +26,7 @@
             <!-- Timer Fragment -->
             <androidx.fragment.app.FragmentContainerView
                 android:id="@+id/timerFragmentContainerView"
-                android:name="com.example.rwgv12.TimerFragment"
+                android:name="com.oraclelabs.workoutgenerator.TimerFragment"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 tools:layout="@layout/fragment_timer" />
@@ -34,7 +34,7 @@
             <!-- List Fragment -->
             <androidx.fragment.app.FragmentContainerView
                 android:id="@+id/listFragmentContainerView"
-                android:name="com.example.rwgv12.ListFragmentAll"
+                android:name="com.oraclelabs.workoutgenerator.ListFragmentAll"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 tools:layout="@layout/fragment_list" />

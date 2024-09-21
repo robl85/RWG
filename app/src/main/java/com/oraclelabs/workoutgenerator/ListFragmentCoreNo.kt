@@ -1,4 +1,4 @@
-package com.example.rwgv12
+package com.oraclelabs.workoutgenerator
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,11 +8,12 @@ import android.widget.Button
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.rwgv12.R
 
 
-class ListFragmentUpperWith : Fragment() {
-    private val upperWithExerciseList = mutableListOf(
-        "Dumbbell Thrusters", "Renegade Rows", "Medicine Ball Slams", "Shoulder Press", "Chest Press", "Bicep Curls", "Tricep Extensions", "Lateral Raises", "Russian Twists with weight", "Box Jumps", "Pull-ups", "Chin-ups", "Dumbbell Rows", "Upright Rows", "Medicine Ball Push-ups", "Battle Rope Waves", "Kettlebell Swings", "Rows- Resistance bands", "Pushups- Resistance bands", "Chest Press- Resistance bands", "Bicep Curls- Resistance bands", "Tricep Extensions- Resistance bands", "Pike Pushups- Resistance bands", "Y Raises- Resistance bands", "T Raises- Resistance bands", "W Raises- Resistance bands", "Atomic Pushups- Resistance bands", "Inverted Rows- Resistance bands", "Inverted Bicep Curls- Resistance bands", "Inverted Tricep Extensions- Resistance bands", "Singlearm Rows- Resistance bands", "Singlearm Bicep Curls- Resistance bands", "Singlearm Tricep Extensions- Resistance bands", "Suspended Pushups- Resistance bands", "Suspended Atomic Pushups- Resistance bands", "Suspended Burpees- Resistance bands"
+class ListFragmentCoreNo : Fragment() {
+    private val coreNoExerciseList = mutableListOf(
+        "Plank", "Side Plank", "Bicycle Crunches", "Russian Twists", "Mountain Climbers", "Flutter Kicks", "Leg Raises", "Sit-ups", "Crunches", "Reverse Crunches", "Superman", "Dead Bug", "Hollow Hold", "V-Ups", "Scissor Kicks", "Plank Jacks", "Spiderman Plank", "Commando Plank", "Side Plank with Hip Dip", "Plank with Shoulder Taps", "Plank with Knee to Elbow", "Boat Pose", "Knee Tucks", "Russian Twists with Leg Raises", "Tuck-ups", "Bicycle Crunches with Leg Extension", "Plank with Leg Lifts", "Plank with Arm Raises", "Plank with Alternating Leg and Arm Lifts", "Lying Windshield Wipers", "Lying Leg Lifts", "Standing Oblique Crunches", "Lying Knee Tucks", "Lying Leg Raises with Hip Lift", "Lying Leg Circles", "Standing Knee to Elbow Crunches", "Standing Oblique Crunches with Leg Lift", "Standing Leg Swings", "Standing Mountain Climbers", "Standing Knee Raises with Twist", "Standing Side Leg Raises", "Standing Side-to-Side Bends", "Standing Alternating Toe Touches"
     )
 
     override fun onCreateView(
@@ -27,7 +28,7 @@ class ListFragmentUpperWith : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         // Shuffle the exercise list
-        upperWithExerciseList.shuffle()
+        coreNoExerciseList.shuffle()
 
         // Find the RecyclerView
         val recyclerView: RecyclerView = view.findViewById(R.id.exerciseRecyclerView)
@@ -36,7 +37,7 @@ class ListFragmentUpperWith : Fragment() {
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
 
         // Create and set up the adapter
-        val adapter = ExerciseAdapter(upperWithExerciseList)
+        val adapter = ExerciseAdapter(coreNoExerciseList)
         recyclerView.adapter = adapter
 
         // Find the refresh button
@@ -45,7 +46,7 @@ class ListFragmentUpperWith : Fragment() {
         // Set click listener for the refresh button
         refreshButton.setOnClickListener {
             // Shuffle the exercise list again
-            upperWithExerciseList.shuffle()
+            coreNoExerciseList.shuffle()
 
             // Notify the adapter that the dataset has changed
             adapter.notifyDataSetChanged()
